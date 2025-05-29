@@ -10,51 +10,179 @@
 <link rel="icon" href="whale2.png" type="image/x-icon">
 <link rel="stylesheet" href="main.css" type="text/css">
     </head>
+    
     <body>
-        <h1> Hello World</h1>
-        <hr>
+        <header>
+        <h1>My Goals For The Year</h1>
+
+<nav aria-label="Primary Navigation">
+    <ul>
+        <li>
+        <a href="#html">Learn HTML</a>
+        </li>
+        <li>
+        <a href="#etsy">Setting Up Shop</a>
+        </li>
+        <li>
+        <a href="#contact">Contact Me</a>
+        </li>
+    </ul>
+</nav>
+</header>
+
+<hr>
+<main>
+        <article id="html">
         <h2>I'm ready to learn HTML </h2>
         <p> This is my first web page!</p>
-
+        <section>    
+        <img src="img/download-3.jpg" alt="raccoon" title="For all intents and purposes, this is me.">
+<h3>HTML5</h3>
+        <figure>
+    <figcaption>Example of HTML5 Code</figcaption>
+    <p>
+        <code>
+            &lt;h1&gt;Hello World!&lt;/h1&gt;
+        </code>
+    </p>
+</figure>
+</section>
         <h3> My Daily Schedule:</h3>
         <!--add more after project 1-->
+        
         <p>
-            Let me tell you how:
-         <ol>
+            Let me tell you how: </p>
+            <ol>
             <li>Week 1: HTML </li>
             <li>Week 2: CSS </li>
             <li>Week 3: Java Script </li>
             <li>Week 4: Project 1: "Putting it all Together" </li>
         </ol>
-        </p>
+        <aside>
+            <details>
+                <summary>
+                    Guess the <mark>number of hours</mark> I code per day!
+                </summary>
+                <p>I write for 3 hours per day starting at 8am</p>
+            </details>
+        </aside>
+<br>
+<table>
+    <caption>My Daily Schedule</caption>
+    <thead>
+    <tr>
+        <th>&nbsp;</th>
+        <th scope="col">Time</th>
+        <th scope="col">Activity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">Morning</th>
+        <td>
+            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+        </td>
+        <td>Write Code</td>
+    </tr>
+     <tr>
+        <th>Break</th>
+        <td>
+            <time datetime="11:00">11am</time>-<time datetime="12:00">11pm</time>
+        </td>
+        <td>Eat Lunch</td>
+    </tr>
+    <tr>
+        <th scope="row">Afternoon</th>
+        <td>
+            <time datetime="12:00">11pm</time>-<time datetime="17:00">5pm</time>
+        </td>
+        <td>Read Tarot</td>
+    </tr>
+    <tr>
+    <th scope="row">Evening</th>
+    <td rowspan="2">All Other Times</td>
+    <td>Free Time</td>
+    </tr>
+    <tr>
+        <th scope="row">Night</th>
+    <td>Sleep</td> 
+    </tr>
+    </tbody>
+    
+    <tfoot>
+       <tr><td colspan="3">Weekends are free!</td></tr> 
+    </tfoot>    
+</table>
+
+        </article>
         <hr>
+        <article id="etsy">
         <h2> I'm also setting up an <a href="https://www.etsy.com/shop/HecatesPetRaccoon"> Etsy shop </a></h2>
+        <figure>
+        <img src="img/shopheader.png" alt="My Etsy Shop"
+             width="800"
+            loading="lazy">
+            </figure> 
         <p>
             A girl's gotta make a living <em>somehow</em>.
         </p>
         <p>
             I read tarot cards, so I'll be selling readings. 
         </p>
+        <figure>
+            <img src="img/tarotcards.png" alt="image of tarot cards"
+             width="800"
+            loading="lazy">
+            <figcaption>Tools of the Trade</figcaption>
+        </figure>
 
-        <h>Types of Reading's I'll Sell:</h>
+        <section>
+        <h3>Types of Reading's I'll Sell:</h3>
+
         <ul>
             <li>Career</li> 
             <li>Luck</li>
             <li>Decision-Making</li>
         </ul>
+        </section>
+        <section>
         <h3>Types of Reading's I'll Avoid:</h3>
         <dl>
-            <dt>Soul Mate</dt>
+            <dt>Soul-Mate</dt>
             <dd>I don't believe in soul mates, all relationships require work.</dd>
             <dt><strong>Health</strong></dt>
             <dd>do NOT consult metaphysical creators with health questions! We are not doctors!</dd>
-
         </dl>
-        
-        <p>
-            Soul Mate, <strong>Health</strong>, Demonology,
-        </p>
+        </section>
+    </article>
+
+    <hr>
+
+    <article id="contact">
+<h2>Contact Me</h2>
+<p>I'd Like to Hear From You!</p>
+<form action="https://httpbin.org/get" method="get">
+    <p>
+    <label for="firstName">First Name:</label>
+    <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required autofocus>
+</p>
+<p>
+    <label for="lastName">Last Name:</label>
+    <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+    </p>
+    <p>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" placeholder="your secret" required>
+    </p>
+</form>
+
+    </article>
+    </main>
+
         <hr>
-        &lt;&lt;&lt;&copy;<a href="about.html">Bridget Forness</a>  &gt;&gt;&gt;
+        <footer>
+        <p>&lt;&lt;&lt;&copy;<a href="about.html">Bridget Forness</a>  &gt;&gt;&gt;</p>
+        <p><a href="#">Back to Top</a></p>
+        </footer>
     </body>
 </html>
